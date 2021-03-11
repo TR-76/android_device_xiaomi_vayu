@@ -1,4 +1,4 @@
-# All the proprietary files are extracted from miui_VAYUGlobal_V12.5.5.0.RJUMIXM_9217fed24b_11.0.zip, unless pinned.
+# All the proprietary files are extracted from miui_VAYUGlobal_V12.5.7.0.RJUMIXM_9847c652ee_11.0.zip, unless pinned.
 
 # ACDB
 vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb
@@ -49,11 +49,11 @@ vendor/lib/rfsa/adsp/misound_res_headphone.bin
 vendor/lib/rfsa/adsp/misound_res_spk.bin
 vendor/lib/rfsa/adsp/tas25xx_TI_0.bin
 
-# AptX - from coral-user-11-RQ1A.210205.004-7038034-release-keys
-vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so|59cbdf5d84ba2ff64014941f3ad9e6c2c35e2c06
-vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so|e25f1087edc95d2ff76c1e37787ca37aae2cf175
-system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
-system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
+# AptX - from coral-user 12 SQ1A.211205.008 7888514 release-keys
+vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so|845b197e93e3a6adde0d97ff59c60f7e
+vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so|9ffc565db4ab693189830797ffd327d3
+system_ext/lib64/libaptX_encoder.so|61614fd95affe01cd89a8524bc33e665
+system_ext/lib64/libaptXHD_encoder.so|82da280656d434c3daece4c1cf21a418
 
 # Audio firmware
 vendor/firmware/tas256x_reg.bin
@@ -429,8 +429,8 @@ vendor/lib64/libsdm-disp-vndapis.so
 vendor/lib64/libsdmextension.so
 vendor/lib64/libtinyxml2_1.so
 
-# Display (SDM) - from qssi_NX627J-user 11 RKQ1.200826.002 nubia.20210420.160129 release-keys
-vendor/lib64/libsdedrm.so|582910d21139781ad9e414c35207584f51e035e2
+# Display (SDM) - from qssi_NX627J-user 11 RKQ1.200826.002 nubia.20210824.181213 release-keys
+vendor/lib64/libsdedrm.so|42e2f2637dde9238ded91b08bf0bd53a
 
 # Display calibration data
 vendor/etc/hdr_config.cfg
