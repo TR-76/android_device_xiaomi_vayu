@@ -14,6 +14,12 @@ $(call inherit-product, device/xiaomi/vayu/device.mk)
 # Inherit common ArrowOS configurations
 $(call inherit-product, vendor/arrow/config/common.mk)
 
+# MG-APKS
+$(call inherit-product-if-exists, vendor/mg-apks/config.mk)
+TARGET_EXCLUDES_PREBUILT_ETAR_CALENDAR := true
+TARGET_EXCLUDES_PREBUILT_PRIVACY_BROWSER := true
+TARGET_EXCLUDES_PREBUILT_SIMPLE_KEYBOARD := true
+
 PRODUCT_NAME := arrow_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_BRAND := POCO
