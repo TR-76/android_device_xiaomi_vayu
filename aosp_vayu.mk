@@ -8,11 +8,9 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Build type
-KRAKEN_BUILD_TYPE := OFFICIAL
-
-# Bootanimation
+# Target
 TARGET_BOOT_ANIMATION_RES := 1080
+KRAKEN_VANILLA := true
 
 # Inherit device configurations
 $(call inherit-product, device/xiaomi/vayu/device.mk)
