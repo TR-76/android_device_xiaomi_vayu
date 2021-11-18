@@ -20,6 +20,7 @@ $(call inherit-product, vendor/aosp/config/common.mk)
 
 # MG-APKS
 $(call inherit-product-if-exists, vendor/mg-apks/config.mk)
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 
 PRODUCT_NAME := aosp_vayu
 PRODUCT_DEVICE := vayu
