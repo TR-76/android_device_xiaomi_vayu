@@ -18,6 +18,9 @@ $(call inherit-product, device/xiaomi/vayu/device.mk)
 # Inherit common configurations
 $(call inherit-product, vendor/aosp/config/common.mk)
 
+# MG-APKS
+$(call inherit-product-if-exists, vendor/mg-apks/config.mk)
+
 PRODUCT_NAME := aosp_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_BRAND := POCO
