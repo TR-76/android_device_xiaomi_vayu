@@ -16,6 +16,7 @@ $(call inherit-product, vendor/arrow/config/common.mk)
 
 # MG-APKS
 $(call inherit-product-if-exists, vendor/mg-apks/config.mk)
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 
 PRODUCT_NAME := arrow_vayu
 PRODUCT_DEVICE := vayu
