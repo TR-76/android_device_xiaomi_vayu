@@ -22,6 +22,9 @@ $(call inherit-product, vendor/aosp/config/common.mk)
 $(call inherit-product-if-exists, vendor/mg-apks/config.mk)
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 
+# Lawnchair Launcher
+$(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
+
 PRODUCT_NAME := aosp_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_BRAND := POCO
