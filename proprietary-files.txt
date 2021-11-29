@@ -599,6 +599,10 @@ vendor/firmware/a640_zap.mdt
 vendor/lib/hw/vulkan.adreno.so|41ba933f4d3ab3b7f2717b774d93ab0389e87a95
 vendor/lib64/hw/vulkan.adreno.so|f17a862f58fda3c65f284708c99bf10c3bcc961f
 
+# Graphics (VulkanAPI Layers) From Google Pixel 4 XL coral-user 12 SP1A.211105.002 7743617 release-keys
+-vendor/app/adreno_graphics_driver/adreno_graphics_driver.apk|48806ee3413a591ab35a262b3c0f88fd8ea85fbf
+-vendor/app/gpu_profiling_vulkan_layer/gpu_profiling_vulkan_layer.apk|00194817bafefbf8f83a9d46087ac0a1a18fae6b
+
 # GNSS
 vendor/bin/loc_launcher
 vendor/bin/lowi-server
