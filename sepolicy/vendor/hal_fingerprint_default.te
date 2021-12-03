@@ -34,3 +34,6 @@ set_prop(hal_fingerprint_default, vendor_fp_prop)
 
 allow hal_fingerprint_default vendor_sysfs_spss:dir { search };
 allow hal_fingerprint_default vendor_sysfs_spss:file { open read };
+allow hal_fingerprint_default system_data_root_file:dir { read open create };
+allow hal_fingerprint_default system_data_root_file:file { read write getattr }; 
+binder_call(hal_fingerprint_default, vendor_hal_perf_default)
