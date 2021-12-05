@@ -241,6 +241,12 @@ service dcvs-sh /vendor/bin/init.qti.dcvs.sh
     disabled
     oneshot
 
+on property:vendor.post_boot.parsed=1
+    write /proc/sys/kernel/sched_rt_period_us 1000000
+    write /proc/sys/kernel/sched_rt_runtime_us 1000000
+    write /proc/sys/kernel/sched_rr_timeslice_ms 1
+    write /proc/sys/kernel/sched_util_clamp_min_rt_default 0
+
 on property:vendor.dcvs.prop=1
    start dcvs-sh
 
