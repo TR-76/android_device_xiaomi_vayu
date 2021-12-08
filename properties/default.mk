@@ -28,7 +28,9 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.use_color_management=true \
     vendor.display.disable_metadata_dynamic_fps=1 \
     vendor.display.defer_fps_frame_count=4 \
-    ro.surface_flinger.use_content_detection_for_refresh_rate=true
+    ro.surface_flinger.use_content_detection_for_refresh_rate=true \
+    ro.surface_flinger.vsync_event_phase_offset_ns=2000000 \
+    ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000
 
 # Enable app/sf phase offset as durations. The numbers below are translated from the existing
 # positive offsets by finding the duration app/sf will have with the offsets.
@@ -40,12 +42,10 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     debug.sf.use_phase_offsets_as_durations=1 \
-    debug.sf.late.sf.duration=10500000 \
-    debug.sf.late.app.duration=16600000 \
-    debug.sf.early.sf.duration=16600000 \
-    debug.sf.early.app.duration=16600000 \
-    debug.sf.earlyGl.sf.duration=16600000 \
-    debug.sf.earlyGl.app.duration=16600000
+    debug.sf.early_phase_offset_ns=500000 \
+    debug.sf.early_app_phase_offset_ns=500000 \
+    debug.sf.early_gl_phase_offset_ns=3000000 \
+    debug.sf.early_gl_app_phase_offset_ns=15000000
 
 ifneq ($(TARGET_BUILD_VARIANT),eng)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
