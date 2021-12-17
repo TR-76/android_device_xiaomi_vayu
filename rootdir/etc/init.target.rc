@@ -285,3 +285,6 @@ on property:sys.boot_completed=1
     # Restrict permissions to socket file
     # to hide Magisk & co.
     chmod 440 /proc/net/unix
+
+    # Reinit lmkd to reconfigure lmkd properties
+    setprop lmkd.reinit 1
