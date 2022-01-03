@@ -14,6 +14,9 @@ $(call inherit-product, device/xiaomi/vayu/device.mk)
 # Inherit common ArrowOS configurations
 $(call inherit-product, vendor/arrow/config/common.mk)
 
+# MG-APKS
+$(call inherit-product-if-exists, vendor/mg-apks/config.mk)
+
 TARGET_SUPPORTS_QUICK_TAP := true
 
 PRODUCT_NAME := arrow_vayu
