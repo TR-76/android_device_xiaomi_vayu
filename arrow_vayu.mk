@@ -18,6 +18,9 @@ $(call inherit-product, vendor/arrow/config/common.mk)
 $(call inherit-product-if-exists, vendor/mg-apks/config.mk)
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 
+# Charging Animation
+TARGET_INCLUDE_PIXEL_CHARGER := true
+
 PRODUCT_NAME := arrow_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_BRAND := POCO
