@@ -35,7 +35,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := google/raven/raven:12/SQ3A.220605.009.B1/8650216:user/release-keys
 
-# ArrowOS additions
-DEVICE_MAINTAINER := kubersharma001
-$(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
-
