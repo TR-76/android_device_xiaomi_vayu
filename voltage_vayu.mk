@@ -14,6 +14,9 @@ $(call inherit-product, device/xiaomi/vayu/device.mk)
 # Inherit common Voltage configurations
 $(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 
+# MG-APKS
+$(call inherit-product-if-exists, vendor/mg-apks/config.mk)
+
 PRODUCT_NAME := voltage_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_BRAND := POCO
