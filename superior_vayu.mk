@@ -11,14 +11,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit device configurations
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
-# Inherit common ArrowOS configurations
-$(call inherit-product, vendor/arrow/config/common.mk)
+# Inherit common SuperiorOS configurations
+$(call inherit-product, vendor/superior/config/common.mk)
 
 # MG-APKS
 $(call inherit-product-if-exists, vendor/mg-apks/config.mk)
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 
-PRODUCT_NAME := arrow_vayu
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Charging Animation
+TARGET_INCLUDE_PIXEL_CHARGER := true
+
+PRODUCT_NAME := superior_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := Poco X3 Pro
