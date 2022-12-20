@@ -40,6 +40,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     VayuWifiOverlay
 
+# Remove Packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
