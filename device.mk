@@ -105,14 +105,6 @@ PRODUCT_PACKAGES += \
     libxml2 \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
-ifeq ($(ARROW_GAPPS),true)
-PRODUCT_PACKAGES += \
-    GCamGOPrebuilt-V3
-else
-PRODUCT_PACKAGES += \
-    GCamGOPrebuilt-V2
-endif
-
 PRODUCT_PACKAGES += \
     libshim_megvii \
     libpiex_shim
