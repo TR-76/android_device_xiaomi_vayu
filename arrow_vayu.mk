@@ -18,6 +18,9 @@ $(call inherit-product, vendor/arrow/config/common.mk)
 $(call inherit-product-if-exists, vendor/microg/config.mk)
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 
+# Bromite Webview
+$(call inherit-product-if-exists, vendor/bromitewebview/config.mk)
+
 PRODUCT_NAME := arrow_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_BRAND := POCO
