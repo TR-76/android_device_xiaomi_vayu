@@ -14,6 +14,10 @@ $(call inherit-product, device/xiaomi/vayu/device.mk)
 # Inherit common ArrowOS configurations
 $(call inherit-product, vendor/arrow/config/common.mk)
 
+# microG
+$(call inherit-product-if-exists, vendor/microg/config.mk)
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+
 PRODUCT_NAME := arrow_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_BRAND := POCO
