@@ -18,6 +18,9 @@ $(call inherit-product, device/xiaomi/vayu/device.mk)
 $(call inherit-product-if-exists, vendor/microg/config.mk)
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 
+# Mulch Webview
+$(call inherit-product-if-exists, vendor/mulch/mulch.mk)
+
 PRODUCT_NAME := lineage_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_MANUFACTURER := Xiaomi
