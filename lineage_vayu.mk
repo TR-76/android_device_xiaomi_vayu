@@ -10,10 +10,23 @@ TARGET_SUPPORTS_OMX_SERVICE := false
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Lineage stuff.
+TARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from vayu device
 $(call inherit-product, device/xiaomi/vayu/device.mk)
+
+# AxionOS flags
+AXION_CAMERA_REAR_INFO := 48,8,5,2
+AXION_CAMERA_FRONT_INFO := 20
+AXION_PROCESSOR := Qualcomm®_Snapdragon_860
+
+TARGET_EXCLUDES_AUDIOFX := true
+TARGET_ENABLE_BLUR := true
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2400
+TARGET_SCREEN_WIDTH := 1080
 
 PRODUCT_NAME := lineage_vayu
 PRODUCT_DEVICE := vayu
