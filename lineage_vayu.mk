@@ -15,6 +15,9 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from vayu device
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
+# Cromite Webview
+$(call inherit-product-if-exists, vendor/cromite/cromite.mk)
+
 PRODUCT_NAME := lineage_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_MANUFACTURER := Xiaomi
